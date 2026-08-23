@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="et">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#9ce7c9">
+  <title>QR-kood · Tehisintellekti töötuba</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@600;800&family=Manrope:wght@700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--ink:#101010;--paper:#f7f3e8;--blue:#2859ff;--coral:#ff735d;--yellow:#ffe44d;--mint:#9ce7c9}
+    *{box-sizing:border-box}html,body{min-height:100%}body{margin:0;display:grid;place-items:center;padding:clamp(20px,4vw,56px);overflow-x:hidden;background:var(--paper);color:var(--ink);font:18px/1.45 "DM Sans",sans-serif}
+    body:before,body:after{content:"";position:fixed;z-index:-1;border:3px solid var(--ink)}body:before{width:220px;height:220px;border-radius:50%;background:var(--coral);right:-72px;top:-70px}body:after{width:160px;height:160px;background:var(--blue);left:-50px;bottom:-55px;transform:rotate(12deg)}
+    main{width:min(720px,100%);text-align:center}.qr-card{padding:clamp(22px,4vw,42px);border:3px solid var(--ink);background:var(--mint);box-shadow:12px 12px 0 var(--ink)}
+    .qr-button{display:block;width:min(100%,500px);margin:auto;padding:0;border:3px solid var(--ink);background:white;cursor:zoom-in;box-shadow:7px 7px 0 var(--ink);transition:transform .15s,box-shadow .15s}.qr-button:hover,.qr-button:focus-visible{transform:translate(3px,3px);box-shadow:4px 4px 0 var(--ink)}.qr-button img{display:block;width:100%;height:auto;padding:16px}
+    .short{position:relative;margin:34px auto 0;padding:18px;border:3px solid var(--ink);background:white;box-shadow:6px 6px 0 var(--ink)}.short small{display:block;margin-bottom:5px;font-weight:800;text-transform:uppercase;letter-spacing:.1em}.short button{display:block;width:100%;padding:0;border:0;background:transparent;color:#48208b;font:800 clamp(28px,5vw,48px)/1.1 Manrope,sans-serif;overflow-wrap:anywhere;cursor:zoom-in;transition:transform .18s,color .18s}.short:hover{z-index:3}.short button:hover,.short button:focus-visible{color:var(--blue);transform:scale(1.18);transform-origin:center;background:var(--yellow);outline:3px solid var(--ink);padding:10px}
+    .overlay{position:fixed;inset:0;z-index:50;display:none;place-items:center;padding:18px;background:#101010e8;cursor:zoom-out}.overlay.open{display:grid}.qr-overlay img{display:block;width:min(92vmin,1100px);height:min(92vmin,1100px);padding:clamp(12px,2vmin,26px);border:4px solid var(--ink);background:white;box-shadow:12px 12px 0 var(--yellow)}.link-overlay a{display:block;max-width:94vw;padding:clamp(24px,5vw,70px);border:4px solid var(--ink);background:var(--yellow);color:var(--ink);box-shadow:14px 14px 0 var(--mint);font:800 clamp(46px,9vw,140px)/1 Manrope,sans-serif;text-align:center;text-decoration:none;overflow-wrap:anywhere;cursor:pointer}.link-overlay a:hover,.link-overlay a:focus-visible{background:white;color:var(--blue)}
+    @media(max-width:600px){body{padding:16px}.qr-card{padding:20px;box-shadow:7px 7px 0 var(--ink)}.short{margin-top:25px}.short button{font-size:clamp(24px,8vw,36px)}.short button:hover,.short button:focus-visible{transform:scale(1.05)}}
+  </style>
+</head>
+<body>
+  <main>
+    <section class="qr-card" aria-label="Tehisintellekti töötoa QR-kood ja lühilink">
+      <button class="qr-button" id="openQr" type="button" aria-label="Suurenda QR-kood üle ekraani">
+        <img src="qr-tehisintellekti-tootuba.svg" alt="QR-kood Tehisintellekti töötoa avamiseks">
+      </button>
+      <div class="short"><small>Lühilink</small><button id="openLink" type="button" aria-label="Suurenda lühilink üle ekraani">tinyurl.com/tivol2</button></div>
+    </section>
+  </main>
+  <div class="overlay qr-overlay" id="qrOverlay" role="dialog" aria-modal="true" aria-label="Suur QR-kood" tabindex="-1">
+    <img src="qr-tehisintellekti-tootuba.svg" alt="Suur QR-kood Tehisintellekti töötoa avamiseks">
+  </div>
+  <div class="overlay link-overlay" id="linkOverlay" role="dialog" aria-modal="true" aria-label="Suur lühilink" tabindex="-1">
+    <a href="https://tinyurl.com/tivol2">tinyurl.com/tivol2</a>
+  </div>
+  <script>
+    const openOverlay=(button,overlay)=>{const open=()=>{overlay.classList.add('open');document.body.style.overflow='hidden';overlay.focus()};const close=()=>{overlay.classList.remove('open');document.body.style.overflow='';button.focus()};button.addEventListener('click',open);overlay.addEventListener('click',event=>{if(event.target===overlay)close()});addEventListener('keydown',event=>{if(event.key==='Escape'&&overlay.classList.contains('open'))close()})};
+    openOverlay(document.querySelector('#openQr'),document.querySelector('#qrOverlay'));
+    openOverlay(document.querySelector('#openLink'),document.querySelector('#linkOverlay'));
+  </script>
+</body>
+</html>
