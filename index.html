@@ -19,10 +19,10 @@
 const A=(type,title,desc,url)=>({type,title,desc,url});
 const modules=[A('I moodul','Juturobotite meistriklass','Funktsioonid edasijõudnutele, promptimise nipid ja valmis promptid.','#module1'),A('II moodul','Personaalse assistendi loomine','Ideest toimiva GPT, Gemi või agendini.','#module2'),A('III moodul','TI kasutamise kord koolis','Turvalisus, vastutus, õigusruum ja kokkulepped.','#module3'),A('IV moodul','Õpetaja tööriistakasti täiendus','AI-vahendid materjalide, mängude ja tagasiside loomiseks.','#module4')];
 const sharedModules=[A('Lisamaterjal','Gemini Canvas','Gemini Canvase võimalused ja praktilised kasutusnäited.','https://docs.google.com/document/d/1qwwsAbj4tIpQEIVTyyCrKkeS6ENtvdCm9k2s-rUcrhs/edit?tab=t.0#heading=h.1qr9c1km1la0'),A('Lisamaterjal','TI tegevused','Praktilised tegevused ja näited tehisintellekti kasutamiseks õppetöös.','https://sites.google.com/hkhk.edu.ee/ti-tegevused/kodu?authuser=0')];
-const m1=[A('Koolituse abimaterjal','EHTL II taseme koolitus','Kogu koolituse abimaterjalide avaleht.','https://sites.google.com/view/ehtl-tase2/avaleht'),A('EHTL II taseme abimaterjal','Promptimise nipid','Roll, eesmärk, kontekst, piirangud ja väljund.','https://sites.google.com/view/ehtl-tase2/prompti-ehitaja/promptimise-nipid?authuser=1'),A('Promptide kogu','Juturoboti promptid','Valmis lähtekohad õpetaja igapäevaülesanneteks.','https://sites.google.com/view/ehtl-tase2/prompti-ehitaja/juturoboti-promptid?authuser=1'),A('Funktsioonide juhend','Gemini funktsioonid','Gemini võimalused ja praktilised töövõtted.','https://docs.google.com/document/d/1mwDFk3hOGAwZPcZjWxmxMYLUmzmyLW0Qb0l3PuyTQsY/edit?usp=sharing'),A('Funktsioonide juhend','ChatGPT funktsioonid','ChatGPT võimalused ja praktilised töövõtted.','https://docs.google.com/document/d/11Rxd18LK6QLCEDKIDljg4uEiqM8xWbdIkJumCMZkkLY/edit?usp=sharing'),A('Funktsioonide juhend','Copilot funktsioonid','Copiloti võimalused ja praktilised töövõtted.','https://docs.google.com/document/d/1DDG9O2kpjOu_tfMfkLJvpG20936mfJ98zfhSo_Bx93Q/edit?usp=sharing'),A('Interaktiivne tööriist','Gemini tööriistakast','Praktiline veebipõhine tööriistakast Gemini võimaluste kasutamiseks õpetaja töös.','https://gemitooriistakast.lovable.app/'),...sharedModules];
-const m2=[A('Samm-sammult','Ideest assistendini','Assistendi eesmärgi, juhiste ja teadmiste kavandamine.','https://sites.google.com/view/ehtl-tase2/ideest-assistendini?authuser=0'),A('Lisamaterjal','TI-Hüppe konkursitööd','Tasuta õpetajate loodud tehisaru lahendused ja õppematerjalid.','https://tihupe.ee/tehisaru-lahendused/')];
+const m1=[A('Koolituse abimaterjal','EHTL II taseme koolitus','Kogu koolituse abimaterjalide avaleht.','https://sites.google.com/view/ehtl-tase2/avaleht'),A('EHTL II taseme abimaterjal','Promptimise nipid','Roll, eesmärk, kontekst, piirangud ja väljund.','https://sites.google.com/view/ehtl-tase2/prompti-ehitaja/promptimise-nipid?authuser=1'),A('Promptide kogu','Juturoboti promptid','Valmis lähtekohad õpetaja igapäevaülesanneteks.','https://sites.google.com/view/ehtl-tase2/prompti-ehitaja/juturoboti-promptid?authuser=1'),A('Funktsioonide juhend','Gemini funktsioonid','Gemini võimalused ja praktilised töövõtted.','https://docs.google.com/document/d/1mwDFk3hOGAwZPcZjWxmxMYLUmzmyLW0Qb0l3PuyTQsY/edit?usp=sharing'),A('Funktsioonide juhend','ChatGPT funktsioonid','ChatGPT võimalused ja praktilised töövõtted.','https://docs.google.com/document/d/11Rxd18LK6QLCEDKIDljg4uEiqM8xWbdIkJumCMZkkLY/edit?usp=sharing'),A('Funktsioonide juhend','Copilot funktsioonid','Copiloti võimalused ja praktilised töövõtted.','https://docs.google.com/document/d/1DDG9O2kpjOu_tfMfkLJvpG20936mfJ98zfhSo_Bx93Q/edit?usp=sharing'),A('Interaktiivne tööriist','Gemini tööriistakast','Praktiline veebipõhine tööriistakast Gemini võimaluste kasutamiseks õpetaja töös.','https://gemitooriistakast.lovable.app/'),A('Ideepank','Canvase ideepank','11 valmis ideed ja kopeeritavat viipa interaktiivsete õppematerjalide loomiseks.','#canvas-ideapank'),...sharedModules];
+const m2=[A('Samm-sammult','Ideest assistendini','Assistendi eesmärgi, juhiste ja teadmiste kavandamine.','https://sites.google.com/view/ehtl-tase2/ideest-assistendini?authuser=0'),A('Praktiline viibakogu','ChatGPT oskused','Viis valmis oskuse kirjeldust õpetajale koos ühe klõpsuga kopeerimisega.','#chatgpt-skills'),A('Lisamaterjal','TI-Hüppe konkursitööd','Tasuta õpetajate loodud tehisaru lahendused ja õppematerjalid.','https://tihupe.ee/tehisaru-lahendused/')];
 const m3=[A('Riiklik juhend · PDF','Tehisaru juhend 2024','Haridus- ja Teadusministeeriumi juhend õppetööks.','https://www.hm.ee/sites/default/files/documents/2024-03/Tehisaru%20juhend%202024.pdf')];
-const m4=[{...A('Tööriist','MagicSchool AI','Planeerimine, materjalid ja kohandamine.','https://www.magicschool.ai/'),video:'https://youtu.be/i-0RkhxIvOA'},{...A('Tööriist','Gemini Notebook','Allikapõhine materjalide analüüs, kokkuvõtted ja õppesisu loomine.','https://notebooklm.google.com/'),video:'https://youtu.be/D56TFIP3AsA'},{...A('Tööriist','Brisk Teaching','Tagasiside, materjalid ja diferentseerimine.','https://www.briskteaching.com/'),video:'https://youtu.be/qnca-fkiULA'},{...A('Tööriist','Padlet Arcade','Interaktiivsed harjutused ja õppemängud.','https://arcade.padlet.com/'),video:'https://youtu.be/XZaPiMhZtTs'},{...A('Tööriist','Canva AI','Visuaalid, esitlused ja loovkoodimine.','https://www.canva.com/'),video:'https://youtu.be/4j7U9toLEt8'},{...A('Tööriist','Gamma AI','Esitlused ja dokumendid tekstist.','https://gamma.app/'),video:'https://youtu.be/dvldzwS3g3s'},{...A('Tööriist','Mizou','Vestluspõhised AI-õpiabilised õpilastele.','https://mizou.com/'),video:'https://www.youtube.com/watch?v=KnfAZQPcYII'},A('Näide','Liikumispausi ketas','Gemini abil loodud praktiline tunnivahend.','https://sites.google.com/view/ehtl-tase2/liikumispausi-ketas-gemini?authuser=4'),A('Materjalikogu','TI-Hüppe lahendused','Tasuta õpetajate loodud lahendused.','https://tihupe.ee/tehisaru-lahendused/')];
+const m4=[{...A('Tööriist','MagicSchool AI','Planeerimine, materjalid ja kohandamine.','https://www.magicschool.ai/'),video:'https://youtu.be/i-0RkhxIvOA'},{...A('Tööriist','Gemini Notebook','Allikapõhine materjalide analüüs, kokkuvõtted ja õppesisu loomine.','https://notebooklm.google.com/'),video:'https://youtu.be/D56TFIP3AsA'},{...A('Tööriist','Brisk Teaching','Tagasiside, materjalid ja diferentseerimine.','https://www.briskteaching.com/'),video:'https://youtu.be/qnca-fkiULA'},{...A('Tööriist','Padlet Arcade','Interaktiivsed harjutused ja õppemängud.','https://arcade.padlet.com/'),video:'https://youtu.be/XZaPiMhZtTs'},{...A('Tööriist','Canva AI','Visuaalid, esitlused ja loovkoodimine.','https://www.canva.com/'),video:'https://youtu.be/4j7U9toLEt8'},{...A('Tööriist','Gamma AI','Esitlused ja dokumendid tekstist.','https://gamma.app/'),video:'https://youtu.be/dvldzwS3g3s'},{...A('Tööriist','Mizou','Vestluspõhised AI-õpiabilised õpilastele.','https://mizou.com/'),video:'https://www.youtube.com/watch?v=KnfAZQPcYII'},A('Ideepank','Canvase ideepank','11 valmis ideed, kopeeritavad viibad ja toimivad näidised.','#canvas-ideapank'),A('Näide','Liikumispausi ketas','Gemini abil loodud praktiline tunnivahend.','https://sites.google.com/view/ehtl-tase2/liikumispausi-ketas-gemini?authuser=4'),A('Materjalikogu','TI-Hüppe lahendused','Tasuta õpetajate loodud lahendused.','https://tihupe.ee/tehisaru-lahendused/')];
 const m4Descriptions={
  'MagicSchool AI':'Õpetajatele loodud TI-keskkond tunnikavade, hindamisjuhendite, diferentseeritud ülesannete ja õppematerjalide kiireks koostamiseks.',
  'Gemini Notebook':'Allikapõhine TI-märkmik, kuhu saab lisada oma materjalid ning nende põhjal koostada kokkuvõtteid, küsimusi, õppesisu ja audioülevaateid.',
@@ -80,20 +80,338 @@ const workshopExtras=[
 document.querySelector('#nav').insertAdjacentHTML('beforeend','<a href="#aitools">AI tööriistad kategooriate kaupa</a><a href="#workshops2025">TI töötoad 2025</a>');
 const workshopCards=workshops2025.map(x=>`<article class="card workshop-card"><span class="type">${x.nr}</span><h3>${x.title}</h3><p>Mooduli slaidid.</p><div class="card-links"><a target="_blank" rel="noopener" href="${x.slides}">Ava slaidid ↗</a></div></article>`).join('');
 document.querySelector('main').insertAdjacentHTML('beforeend',`<section class="page" data-page="workshops2025"><div class="head"><div class="crumb">Avaleht / TI töötoad 2025</div><h2>TI töötoad 2025</h2><p>Praktiliste tehisintellekti töötubade slaidid ja lisamaterjalid õpetajatele.</p><div class="actions"><button class="btn" data-back>← Tagasi</button></div></div><div class="content"><h3 class="section-title">Moodulite slaidid</h3><div class="grid workshop-grid">${workshopCards}</div><h3 class="section-title">Lisamaterjalid</h3><div class="grid">${cards(workshopExtras)}</div></div></section>`);
+const chatGptSkills=[
+ {title:'Õppematerjali lihtsustaja',text:`Loo oskus, mis aitab õpetajal muuta õppematerjale õpilastele lihtsamaks ja arusaadavamaks.
+
+Õpetaja annab oskusele teksti, tööjuhise, ülesande või muu õppematerjali ning ütleb, millisele klassile või vanuserühmale see on mõeldud.
+
+Säilita algse materjali oluline sisu, faktid, nimed, arvud, kuupäevad ja nõuded. Muuda pikad ja keerulised laused lühemaks ning selgita keerulisemaid mõisteid lihtsas keeles. Vajadusel lisa keerulise sõna järele sulgudesse lühike selgitus.
+
+Ära jäta olulist infot välja ja ära lisa fakte, mida algses materjalis ei ole. Ära anna ülesannete vastuseid õpilasele ette.
+
+Kui õpetaja ei ole öelnud, millisele klassile või vanuserühmale materjal on mõeldud, küsi seda enne materjali kohandamist.
+
+Kui algses materjalis on midagi ebaselget, vastuolulist või olulist infot tundub puuduvat, märgi see õpetajale eraldi ja ära mõtle puuduvat infot ise välja.
+
+Materjali lõppu lisa 2–3 lihtsat kontrollküsimust, millega õpetaja saab kontrollida, kas õpilane sai materjalist aru.`},
+ {title:'Ülesande diferentseerija',text:`Loo oskus, mis aitab õpetajal kohandada sama õppeülesannet erineva tasemega õppijatele.
+
+Õpetaja annab oskusele ülesande, tööjuhise või harjutuse ning võimalusel klassi ja õpieesmärgi.
+
+Koosta algse ülesande põhjal kolm varianti:
+
+1. Tuge vajav õppija – lihtsam sõnastus, väiksemad sammud, vajadusel vihjed või abistavad küsimused.
+2. Põhitase – ülesanne sobib eakohasel tasemel iseseisvaks lahendamiseks.
+3. Edasijõudnud õppija – lisa keerukust, põhjendamist, seoste loomist, uurimist või loomingulist mõtlemist.
+
+Kõik kolm varianti peavad toetama sama peamise õpieesmärgi saavutamist. Lihtsustatud variant ei tohi muutuda sisutühjaks ning keerulisem variant ei tohi olla lihtsalt rohkem samasuguseid ülesandeid.
+
+Ära anna õpilasele valmis vastuseid.
+
+Iga variandi juures selgita õpetajale ühe lausega, kuidas ülesannet kohandati.
+
+Kui klass, õpieesmärk või algne ülesanne ei ole piisavalt selge, küsi enne täpsustav küsimus.`},
+ {title:'Arengut toetav tagasiside',text:`Loo oskus, mis aitab õpetajal anda õpilase tööle selget, toetavat ja arengut suunavat tagasisidet.
+
+Õpetaja annab oskusele õpilase töö või vastuse. Kui olemas on hindamiskriteeriumid, õpieesmärgid või ülesande juhend, arvestab oskus ka nendega.
+
+Tagasiside peab sisaldama:
+
+- mida õpilane tegi hästi;
+- 1–2 kõige olulisemat arengukohta;
+- konkreetseid soovitusi, mida õpilane võiks järgmisena parandada või proovida;
+- ühte küsimust, mis suunab õpilast oma töö üle ise mõtlema.
+
+Kirjuta tagasiside õpilasele arusaadavas, sõbralikus ja konkreetses keeles. Väldi üldiseid kommentaare nagu „Tubli!“ või „Pead rohkem harjutama“, kui neile ei järgne selgitust.
+
+Ära kirjuta õpilase tööd tema eest ümber ega anna talle automaatselt valmis ideaalvastust.
+
+Kui õpetaja soovib hinnet või punktisummat, kasuta ainult õpetaja antud hindamiskriteeriume. Kui hindamiskriteeriume pole antud, ära mõtle neid ise välja.
+
+Kui töö hindamiseks pole piisavalt infot, ütle õpetajale, millist infot oleks veel vaja.`},
+ {title:'Aktiivsete õppetegevuste ideed',text:`Loo oskus, mis aitab õpetajal leida õppeteema jaoks aktiivseid ja õpilasi kaasavaid õppetegevusi.
+
+Õpetaja annab oskusele vähemalt õppeaine või teema ja klassi. Võimalusel arvestab oskus ka tunni pikkuse, õpieesmärgi, õpilaste arvu ning olemasolevate vahenditega.
+
+Paku 3–5 erinevat õppetegevust, kus õpilased peavad ise midagi tegema: arutlema, uurima, lahendama probleemi, looma, katsetama, võrdlema, põhjendama, liikuma või koostööd tegema.
+
+Iga idee juures näita:
+
+- tegevuse lühikirjeldus;
+- ligikaudne ajakulu;
+- vajalikud vahendid;
+- mida teeb õpetaja;
+- mida teevad õpilased;
+- kuidas tegevus aitab õpitulemust saavutada.
+
+Väldi tegevusi, kus õpilased on suurema osa ajast ainult passiivsed kuulajad.
+
+Eelista tegevusi, mida saab läbi viia tavalises klassiruumis ilma kallite või keeruliste vahenditeta.
+
+Kui õpetaja soovib, kohanda valitud tegevust erineva tasemega õppijatele.
+
+Kui ülesande koostamiseks puudub oluline info, küsi õpetajalt enne 1–2 täpsustavat küsimust.`},
+ {title:'Õppijakeskne tunnikava',text:`Loo oskus, mis aitab õpetajal koostada praktilisi ja õppijakeskseid tunnikavasid.
+
+Õpetaja annab oskusele tunni teema, klassi või vanuserühma ja tunni pikkuse. Võimalusel annab õpetaja ka soovitud õpitulemuse.
+
+Koosta tunnikava järgmise struktuuriga:
+
+- tunni teema;
+- õpitulemus;
+- vajalikud vahendid;
+- häälestus;
+- põhitegevused;
+- kinnistamine;
+- tunni lõpetamine ja refleksioon.
+
+Näita iga tunni osa juures ligikaudne ajakulu. Kõigi tegevuste ajad kokku peavad vastama tunni pikkusele.
+
+Eelista tegevusi, kus õpilased ise mõtlevad, arutlevad, uurivad, loovad, katsetavad või lahendavad probleeme. Ära täida kogu tundi õpetaja selgituste või loenguga.
+
+Lisa vähemalt üks võimalus, kuidas toetada rohkem abi vajavat õppijat, ning üks võimalus, kuidas anda kiiremini edenevale õppijale lisaväljakutse.
+
+Tunni lõppu lisa lühike viis, kuidas õpetaja saab kontrollida, kas õpitulemus saavutati.
+
+Kui tunni teema, klass, kestus või muu oluline info puudub, küsi enne tunnikava koostamist täpsustavaid küsimusi. Ära mõtle õpetaja eest puuduvat olulist infot ise välja.`}
+];
+const skillCards=chatGptSkills.map((skill,index)=>`<article class="skill-card"><div class="skill-card-head"><span class="skill-number">${String(index+1).padStart(2,'0')}</span><h3>${skill.title}</h3></div><pre class="skill-prompt"></pre><div class="skill-actions"><button class="btn primary skill-copy" type="button" data-skill-index="${index}" aria-label="Kopeeri viip: ${skill.title}">Kopeeri viip</button><span class="copy-status" aria-live="polite"></span></div></article>`).join('');
+document.querySelector('main').insertAdjacentHTML('beforeend',`<section class="page" data-page="chatgpt-skills"><div class="head"><div class="crumb">Moodulid / II moodul / ChatGPT oskused</div><h2>ChatGPT oskused</h2><p>Vali üks viiest. Kleebi kirjeldus oskuse loomise vestlusse. Enne saatmist muuda vähemalt ühte reeglit nii, et oskus vastaks paremini sinu ainele või õpetamisviisile.</p><div class="actions"><button class="btn" data-back>← Tagasi</button></div></div><div class="content"><a class="skill-editor-link" href="#chatgpt-skill-editor"><span class="skill-editor-icon">✦</span><span><small>10 valmis näidist</small><strong>Loo oskus ChatGPT redaktoris</strong><em>Vali oskus ning kopeeri nimi, kirjeldus ja juhised sobivatesse väljadesse.</em></span><b>Ava valikud →</b></a><div class="skills-grid">${skillCards}</div></div></section>`);
+document.querySelectorAll('.skill-prompt').forEach((element,index)=>{element.textContent=chatGptSkills[index].text});
+async function copySkillPrompt(button){const text=chatGptSkills[Number(button.dataset.skillIndex)].text;let copied=false;try{if(navigator.clipboard&&window.isSecureContext){await navigator.clipboard.writeText(text);copied=true}}catch(error){}if(!copied){const helper=document.createElement('textarea');helper.value=text;helper.setAttribute('readonly','');helper.style.position='fixed';helper.style.opacity='0';document.body.appendChild(helper);helper.select();copied=document.execCommand('copy');helper.remove()}const status=button.nextElementSibling;const oldLabel=button.textContent;button.textContent=copied?'Kopeeritud ✓':'Kopeerimine ebaõnnestus';status.textContent=copied?'Viip on lõikelaual.':'Vali tekst ja kopeeri käsitsi.';setTimeout(()=>{button.textContent=oldLabel;status.textContent=''},2200)}
+document.querySelectorAll('.skill-copy').forEach(button=>button.addEventListener('click',()=>copySkillPrompt(button)));
+document.head.insertAdjacentHTML('beforeend',`<style>.skills-grid{display:grid;gap:28px}.skill-card{border:3px solid var(--ink);box-shadow:8px 8px 0 var(--ink);background:#fff;padding:28px}.skill-card:nth-child(4n+2){background:#fff8bf}.skill-card:nth-child(4n+3){background:#d9fff0}.skill-card:nth-child(4n){background:#dfe8ff}.skill-card-head{display:flex;align-items:center;gap:14px;margin-bottom:20px}.skill-card-head h3{margin:0;font-size:clamp(22px,3vw,32px)}.skill-number{display:grid;place-items:center;flex:0 0 48px;height:48px;border:3px solid var(--ink);background:var(--coral);box-shadow:3px 3px 0 var(--ink);font-weight:900}.skill-prompt{margin:0;padding:22px;border:2px solid var(--ink);background:rgba(255,255,255,.78);white-space:pre-wrap;overflow-wrap:anywhere;font:500 16px/1.65 Manrope,sans-serif;color:var(--ink)}.skill-actions{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-top:18px}.skill-copy{cursor:pointer}.copy-status{font-weight:800;min-height:1.4em}@media(max-width:700px){.skill-card{padding:18px;box-shadow:5px 5px 0 var(--ink)}.skill-card-head{align-items:flex-start}.skill-prompt{padding:16px;font-size:15px;line-height:1.55}.skill-actions .btn{width:100%}}</style>`);
+const chatGptEditorSkills=[
+ {title:'Tunnikava koostaja',name:'tunnikava-koostaja',description:'Aitab õpetajal koostada klassile, õppeainele, teemale ja tunni pikkusele sobiva tunnikava. Kasuta, kui õpetaja soovib planeerida uut tundi või saada ideid tunni ülesehituseks ja õppetegevusteks.',instructions:`Aita õpetajal koostada praktiline ja realistlik tunnikava.
+
+Kui vajalik info puudub, küsi kõigepealt:
+- mis klassile tund on;
+- mis õppeainega on tegemist;
+- mis on tunni teema;
+- kui pikk on tund;
+- kas õpetajal on konkreetne õpieesmärk.
+
+Seejärel koosta tunnikava, milles on:
+1. tunni eesmärk;
+2. oodatavad õpitulemused;
+3. vajalikud vahendid;
+4. tunni sissejuhatus;
+5. põhitegevused koos ligikaudse ajajaotusega;
+6. õpilaste iseseisev, paaris- või rühmatöö;
+7. tunni kokkuvõte;
+8. võimalus kontrollida, kas õpilased said teemast aru.
+
+Paku tegevusi, kus õpilased ise mõtlevad, arutlevad, loovad või lahendavad probleeme. Kohanda tegevuste keerukust õpilaste vanusele.`},
+ {title:'Töölehtede ja ülesannete koostaja',name:'toolehe-koostaja',description:'Koostab õpetajale klassi, õppeaine, teema ja raskusastme järgi töölehti ning harjutusülesandeid. Kasuta, kui õpetaja vajab tunniks, kordamiseks või koduseks tööks ülesandeid.',instructions:`Aita õpetajal koostada õpilastele töölehti ja harjutusülesandeid.
+
+Kui vajalik info puudub, küsi:
+- klass;
+- õppeaine;
+- teema;
+- soovitud ülesannete arv;
+- raskusaste.
+
+Kasuta võimalusel erinevaid ülesandetüüpe: lühivastused, selgitamist nõudvad küsimused, sobitamine, praktilised ülesanded, probleemülesanded ja loovülesanded.
+
+Liigu lihtsamatelt ülesannetelt keerulisemate poole. Kirjuta juhised õpilasele selgelt ja vanusele sobivas keeles.
+
+Ära lisa vastuseid ülesannete juurde. Esita lõpus eraldi jaotis „Vastused õpetajale“.`},
+ {title:'Testide ja viktoriinide koostaja',name:'testi-koostaja',description:'Aitab õpetajal koostada teste, kontrollküsimusi ja viktoriine vastavalt klassile, õppeainele ja teemale. Kasuta teadmiste kontrollimiseks, kordamiseks või kujundavaks hindamiseks.',instructions:`Koosta õpetajale õpilaste teadmiste kontrollimiseks test või viktoriin.
+
+Kui vajalik info puudub, küsi:
+- klass;
+- õppeaine;
+- teema;
+- küsimuste arv;
+- kas tegemist on harjutamise või hindelise tööga.
+
+Kasuta erinevaid küsimusetüüpe: valikvastused, lühivastused, avatud küsimused ning põhjendamist nõudvad küsimused.
+
+Koosta erineva raskusastmega küsimusi. Hindelise töö puhul lisa ülesannetele punktid ja näita maksimaalset punktisummat.
+
+Esita õiged vastused ja vajadusel hindamisjuhend eraldi õpetajale mõeldud osas.`},
+ {title:'Õpilase töö tagasisidestaja',name:'tagasiside-abimees',description:'Aitab õpetajal koostada õpilase tööle konkreetset, toetavat ja arengule suunatud tagasisidet. Kasuta kirjalike tööde, projektide, esitluste ja teiste õpilastööde tagasisidestamiseks.',instructions:`Aita õpetajal anda õpilasele selget ja arendavat tagasisidet.
+
+Lähtu ainult õpetaja antud tööst, hindamiskriteeriumidest ja infost. Ära tee oletusi õpilase võimete, motivatsiooni, iseloomu või pingutuse kohta.
+
+Tagasisides esita:
+1. mis on töös hästi;
+2. üks või kaks kõige olulisemat arengukohta;
+3. konkreetne soovitus, kuidas tööd parandada;
+4. järgmine samm õppimiseks.
+
+Kasuta õpilase vanusele sobivat ja sõbralikku keelt. Väldi ebamääraseid kommentaare nagu „Tubli!“ või „Pead rohkem pingutama“.
+
+Kui õpetaja annab hindamiskriteeriumid, seo tagasiside nendega.`},
+ {title:'Diferentseerimise abiline',name:'diferentseerimise-abiline',description:'Aitab õpetajal kohandada sama õppetegevust erineva valmisoleku ja toetuse vajadusega õpilastele. Kasuta ülesannete, tekstide ja õppetegevuste lihtsustamiseks või keerukamaks muutmiseks.',instructions:`Aita õpetajal diferentseerida õppematerjali nii, et kõik õpilased tegeleksid sama põhiteema ja õpieesmärgiga.
+
+Küsi vajadusel:
+- klass;
+- õppeaine;
+- teema;
+- algne ülesanne või õppematerjal;
+- millist kohandamist õpetaja vajab.
+
+Paku kolm varianti:
+1. rohkem tuge vajav õppija;
+2. põhitasemel õppija;
+3. edasijõudnud õppija.
+
+Tuge vajava õppija puhul säilita oluline õpieesmärk, kuid lisa vajadusel näiteid, vihjeid või vaheetappe.
+
+Edasijõudnud õppijale ära lisa lihtsalt rohkem samasuguseid ülesandeid. Suurenda mõtlemise, põhjendamise, rakendamise või loomise keerukust.
+
+Selgita lühidalt, kuidas kolm varianti erinevad.`},
+ {title:'Asendusõpetaja tunni ettevalmistaja',name:'asendusopetaja-abiline',description:'Aitab õpetajal koostada asendusõpetajale selge ja kiiresti kasutatava tunnijuhendi. Kasuta, kui õpetaja puudub ja soovib anda asendajale tunni läbiviimiseks vajalikud juhised.',instructions:`Koosta asendusõpetajale tunnijuhend, millest saab aru ka õpetaja, kes ei tunne klassi ega õpetatavat teemat põhjalikult.
+
+Küsi vajadusel:
+- klass;
+- õppeaine;
+- tunni teema;
+- tunni pikkus;
+- mida õpilased on juba õppinud;
+- millised materjalid on olemas.
+
+Koosta juhend järgmises järjekorras:
+1. tunni eesmärk;
+2. vajalikud materjalid;
+3. mida tunni alguses õpilastele öelda;
+4. tegevused samm-sammult;
+5. tegevuste ligikaudne kestus;
+6. mida teha, kui ülesanded saavad varem valmis;
+7. mida tunni lõpus kontrollida;
+8. milline info tuleks põhiõpetajale edasi anda.
+
+Hoia juhised lühikesed, konkreetsed ja praktilised.`},
+ {title:'Õpilaste väärarusaamade ennustaja',name:'vaararusaamade-ennustaja',description:'Aitab õpetajal ette näha teema õppimisel tekkivaid tüüpilisi väärarusaamu ja vigu ning koostada nende avastamiseks kontrollküsimusi. Kasuta tunni, ülesannete või hindamise ettevalmistamisel.',instructions:`Aita õpetajal ette näha, millised väärarusaamad võivad õpilastel teema õppimisel tekkida.
+
+Küsi vajadusel:
+- klass;
+- õppeaine;
+- teema;
+- mida õpilased on varem õppinud.
+
+Paku 3–5 tõenäolist väärarusaama.
+
+Iga väärarusaama puhul esita:
+1. milles väärarusaam seisneb;
+2. milline õpilase vastus või tegevus võib sellele viidata;
+3. üks küsimus või väike ülesanne selle avastamiseks;
+4. kuidas õpetaja võiks aidata õpilasel ise oma eksimuseni jõuda.
+
+Ära käsitle oletatud väärarusaamu faktina konkreetse õpilase kohta. Eelista küsimusi, mis aitavad õpetajal mõista õpilase mõttekäiku.`},
+ {title:'Suulise küsitlemise abiline',name:'suulise-kusitlemise-abiline',description:'Viib õpilasega läbi kohanduva suulise teadmiste kontrolli. Kasuta, kui õpetaja soovib küsimuste abil uurida õpilase arusaamist, põhjendamisoskust ja teadmiste sügavust.',instructions:`Tegutse suulise küsitlemise juhendajana.
+
+Küsi alguses:
+- klass;
+- õppeaine;
+- teema;
+- kui kaua küsitlemine võiks kesta.
+
+Esita korraga ainult üks küsimus ja oota õpilase vastust.
+
+Alusta põhiteadmisi kontrolliva küsimusega.
+
+Kohanda järgmist küsimust vastavalt vastusele:
+- kui vastus on ebakindel, küsi lihtsam või suunav küsimus;
+- kui vastus on õige, küsi põhjendust;
+- kui õpilane saab hästi hakkama, liigu rakendamise ja keerukamate küsimuste juurde.
+
+Ära anna õiget vastust kohe ette. Kasuta vajadusel vihjeid, mis aitavad õpilasel ise vastuseni jõuda.
+
+Küsitlemise lõpus anna lühike kokkuvõte sellest, millest õpilane hästi aru sai, mida tasuks veel harjutada ja mis võiks olla järgmine õppimise samm.`},
+ {title:'Õpilase eneseanalüüsi juhendaja',name:'eneseanaluusi-juhendaja',description:'Aitab õpilasel analüüsida oma õppimist, tehtud tööd või projekti ning seada järgmisi eesmärke. Kasuta pärast suuremat ülesannet, projekti, kontrolltööd või õppeperioodi.',instructions:`Juhenda õpilast oma õppimist analüüsima.
+
+Küsi alguses õpilase klassi ja seda, millist tööd, projekti või õppeperioodi ta soovib analüüsida.
+
+Esita küsimusi ükshaaval ja oota vastust.
+
+Uuri näiteks:
+- millega õpilane on kõige rohkem rahul;
+- mis oli kõige keerulisem;
+- kuidas ta raskusega toime tuli;
+- mida ta õppis;
+- mida teeks järgmine kord teisiti;
+- milles tahaks paremaks saada.
+
+Kohanda küsimuste keerukust õpilase vanusele.
+
+Ära anna õpilase eest hinnanguid ega vasta küsimustele tema eest. Kasuta õpilase vastuseid jätkuküsimuste koostamiseks.
+
+Vestluse lõpus aita õpilasel sõnastada üks konkreetne ja realistlik järgmine eesmärk ning tegevus selle saavutamiseks.`},
+ {title:'AI kasutamise nõustaja',name:'ai-kasutuse-noustaja',description:'Aitab õpetajal hinnata, kas tehisintellekti kasutamine konkreetses õppeülesandes toetab õppimist või teeb õpilase eest ära olulise mõttetöö. Kasuta AI-ga seotud ülesannete, projektide ja õppetegevuste kavandamisel.',instructions:`Aita õpetajal otsustada, kas ja kuidas kasutada AI-d kavandatavas õppetegevuses.
+
+Küsi vajadusel:
+- klass;
+- õppeaine;
+- õppetegevus või ülesanne;
+- peamine õpieesmärk;
+- mida peab õpilane selle tegevuse käigus ise õppima või harjutama.
+
+Analüüsi kõigepealt, milline mõttetöö on ülesande juures õppimise seisukohalt oluline.
+
+Seejärel anna üks kolmest soovitusest:
+1. AI kasutamine sobib;
+2. AI kasutamine sobib piirangutega;
+3. AI kasutamine pigem ei sobi.
+
+Põhjenda otsust.
+
+Kui AI kasutamine sobib, paku:
+- millises tööetapis AI-d kasutada;
+- mida peab õpilane kindlasti ise tegema;
+- kuidas õpilane peaks AI väljundit kontrollima;
+- kuidas muuta õpilase enda mõtlemine õpetajale nähtavaks.
+
+Kui AI teeb ära just selle oskuse või mõttetöö, mida õpilane peaks harjutama, soovita AI kasutamist piirata või ülesannet muuta.
+
+Ära soovita AI kasutamist ainult sellepärast, et see muudab töö kiiremaks.`}
+];
+const editorSkillCards=chatGptEditorSkills.map((skill,index)=>`<details class="editor-skill-card"><summary class="editor-skill-title"><span>${String(index+1).padStart(2,'0')}</span><h3>${skill.title}</h3><i aria-hidden="true">+</i></summary><div class="editor-skill-body"><div class="editor-field"><div><b>Nimi</b><button type="button" class="mini-copy" data-editor-index="${index}" data-editor-field="name">Kopeeri</button></div><pre>${skill.name}</pre></div><div class="editor-field"><div><b>Kirjeldus</b><button type="button" class="mini-copy" data-editor-index="${index}" data-editor-field="description">Kopeeri</button></div><pre>${skill.description}</pre></div><div class="editor-field"><div><b>Oskuse juhised</b><button type="button" class="mini-copy" data-editor-index="${index}" data-editor-field="instructions">Kopeeri</button></div><pre>${skill.instructions}</pre></div><div class="editor-card-actions"><button type="button" class="btn primary editor-copy-all" data-editor-index="${index}">Kopeeri kõik väljad</button><span class="editor-copy-status" aria-live="polite"></span></div></div></details>`).join('');
+document.querySelector('main').insertAdjacentHTML('beforeend',`<section class="page" data-page="chatgpt-skill-editor"><div class="head"><div class="crumb">Moodulid / II moodul / ChatGPT oskused / Oskuse redaktor</div><h2>Loo oskus ChatGPT redaktoris</h2><p>Vali sobiv näidis. Kopeeri nimi, kirjeldus ja oskuse juhised eraldi ChatGPT redaktori vastavatesse väljadesse või kasuta nuppu „Kopeeri kõik väljad“.</p><div class="actions"><button class="btn" data-back>← Tagasi</button><a class="btn primary" target="_blank" rel="noopener" href="https://chatgpt.com/">Ava ChatGPT ↗</a></div></div><div class="content"><div class="editor-help"><b>Kuidas kasutada?</b><ol><li>Vali üks kümnest oskusest.</li><li>Kopeeri väljad ChatGPT oskuse redaktorisse.</li><li>Kohanda vähemalt ühte reeglit oma aine või õpetamisviisi järgi.</li><li>Kontrolli oskust ühe näidissisendiga enne kasutamist.</li></ol></div><div class="editor-skills-grid">${editorSkillCards}</div></div></section>`);
+function editorCopyText(index,field){const skill=chatGptEditorSkills[index];if(field==='all')return `NIMI\n${skill.name}\n\nKIRJELDUS\n${skill.description}\n\nOSKUSE JUHISED\n${skill.instructions}`;return skill[field]}
+async function copyEditorSkill(button,field){const index=Number(button.dataset.editorIndex);const text=editorCopyText(index,field);let copied=false;try{if(navigator.clipboard&&window.isSecureContext){await navigator.clipboard.writeText(text);copied=true}}catch(error){}if(!copied){const helper=document.createElement('textarea');helper.value=text;helper.setAttribute('readonly','');helper.style.position='fixed';helper.style.opacity='0';document.body.appendChild(helper);helper.select();copied=document.execCommand('copy');helper.remove()}const card=button.closest('.editor-skill-card');const status=card.querySelector('.editor-copy-status');const original=button.textContent;button.textContent=copied?'Kopeeritud ✓':'Proovi uuesti';status.textContent=copied?(field==='all'?'Kõik väljad on lõikelaual.':'Valitud väli on lõikelaual.'):'Kopeerimine ebaõnnestus.';setTimeout(()=>{button.textContent=original;status.textContent=''},2200)}
+document.querySelectorAll('.mini-copy').forEach(button=>button.addEventListener('click',()=>copyEditorSkill(button,button.dataset.editorField)));
+document.querySelectorAll('.editor-copy-all').forEach(button=>button.addEventListener('click',()=>copyEditorSkill(button,'all')));
+document.head.insertAdjacentHTML('beforeend',`<style>.skill-editor-link{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:20px;margin-bottom:32px;padding:22px;border:3px solid var(--ink);background:var(--blue);color:white;box-shadow:8px 8px 0 var(--ink);text-decoration:none;transition:transform .15s,box-shadow .15s}.skill-editor-link:hover,.skill-editor-link:focus-visible{transform:translate(-3px,-3px);box-shadow:11px 11px 0 var(--ink)}.skill-editor-icon{display:grid;place-items:center;width:58px;height:58px;border:3px solid var(--ink);background:var(--yellow);color:var(--ink);font-size:30px}.skill-editor-link small,.skill-editor-link strong,.skill-editor-link em{display:block}.skill-editor-link small{text-transform:uppercase;letter-spacing:.12em;font-weight:900}.skill-editor-link strong{font-size:clamp(22px,3vw,34px);margin:3px 0}.skill-editor-link em{font-style:normal}.skill-editor-link>b{white-space:nowrap}.editor-help{margin-bottom:28px;padding:22px;border:3px solid var(--ink);background:var(--yellow);box-shadow:6px 6px 0 var(--ink)}.editor-help ol{margin-bottom:0}.editor-skills-grid{display:grid;gap:18px}.editor-skill-card{border:3px solid var(--ink);background:#fff;box-shadow:7px 7px 0 var(--ink)}.editor-skill-card:nth-child(4n+2){background:#fff8bf}.editor-skill-card:nth-child(4n+3){background:#d9fff0}.editor-skill-card:nth-child(4n){background:#dfe8ff}.editor-skill-title{display:flex;align-items:center;gap:14px;padding:20px 24px;cursor:pointer;list-style:none}.editor-skill-title::-webkit-details-marker{display:none}.editor-skill-title span{display:grid;place-items:center;flex:0 0 48px;height:48px;border:3px solid var(--ink);background:var(--coral);font-weight:900}.editor-skill-title h3{flex:1;margin:0;font-size:clamp(20px,3vw,28px)}.editor-skill-title i{display:grid;place-items:center;flex:0 0 42px;height:42px;border:3px solid var(--ink);background:var(--yellow);font:900 28px/1 Manrope,sans-serif;font-style:normal;transition:transform .2s}.editor-skill-card[open] .editor-skill-title{border-bottom:3px solid var(--ink)}.editor-skill-card[open] .editor-skill-title i{transform:rotate(45deg);background:var(--coral)}.editor-skill-title:hover i,.editor-skill-title:focus-visible i{box-shadow:3px 3px 0 var(--ink);transform:translate(-2px,-2px)}.editor-skill-card[open] .editor-skill-title:hover i,.editor-skill-card[open] .editor-skill-title:focus-visible i{transform:rotate(45deg) translate(-2px,-2px)}.editor-skill-body{padding:8px 26px 26px}.editor-field{margin-top:16px}.editor-field>div{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:6px}.editor-field b{text-transform:uppercase;letter-spacing:.08em;font-size:13px}.editor-field pre{margin:0;padding:16px;border:2px solid var(--ink);background:rgba(255,255,255,.82);white-space:pre-wrap;overflow-wrap:anywhere;font:500 15px/1.6 Manrope,sans-serif}.mini-copy{padding:6px 10px;border:2px solid var(--ink);background:var(--paper);box-shadow:2px 2px 0 var(--ink);font:800 13px Manrope,sans-serif;cursor:pointer}.mini-copy:hover,.mini-copy:focus-visible{background:var(--lime);transform:translate(-1px,-1px)}.editor-card-actions{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-top:20px}.editor-copy-status{font-weight:800}@media(max-width:700px){.skill-editor-link{grid-template-columns:auto 1fr;padding:16px}.skill-editor-link>b{grid-column:1/-1}.editor-skill-card{box-shadow:5px 5px 0 var(--ink)}.editor-skill-title{padding:14px;gap:10px}.editor-skill-title span{flex-basis:42px;height:42px}.editor-skill-title i{flex-basis:38px;height:38px}.editor-skill-body{padding:4px 16px 18px}.editor-card-actions .btn{width:100%}}</style>`);
+const canvasIdeas=[
+ {title:'Interaktiivne õpimäng või enesekontrollitest',about:'Kiire teadmiste kontroll, mis annab vastuse järel kohe tagasisidet ja näitab lõppskoori.',prompt:`Loo HTML-i ja JavaScripti abil interaktiivne enesekontrollitest teemal „Rakuehitus ja selle funktsioonid”. Testis olgu 5 valikvastustega küsimust. Kui õpilane valib vastuse, näita kohe rohelise või punasega, kas vastus oli õige, ja lisa lühike selgitus. Lõpus kuva skoor. Kujundus peab olema selge, mobiilisõbralik ja sobima 8. klassi õpilasele.`,example:'https://sites.google.com/hkhk.edu.ee/ti-tegevused/rakuehitus-ja-selle-funktsioonid-enesekontroll?authuser=0'},
+ {title:'Diferentseeritud lugemistekst ja tööleht',about:'Õppetekst koos võtmemõistete ja aruteluküsimustega, mida saab Canvases lõikude kaupa kohandada.',prompt:`Kirjuta umbes 300-sõnaline lugemistekst teemal „Taastuvenergia tulevik” keskmisele keeletasemele. Lisa teksti alla 5 võtmemõiste lihtsad seletused ja 3 aruteluküsimust. Koosta lisaks kaks kohandust: lihtsama sõnastusega versioon rohkem tuge vajavale õppijale ja üks süvendav ülesanne edasijõudnud õppijale. Säilita kõigis versioonides sama õpieesmärk.`},
+ {title:'Visuaalne simulatsioon reaalainetes',about:'Muudetavate parameetritega mudel aitab õpilasel seoseid katsetades avastada.',prompt:`Loo ühe HTML-failina lihtne interaktiivne simulatsioon, mis kujutab visuaalselt keha vabakukkumist. Lisa liugurid, millega saab muuta algkõrgust h ja raskuskiirendust g. Näita animatsiooni kõrval hetke aega, läbitud teepikkust ja kiirust. Lisa nupp „Alusta uuesti” ning lühike õpilase tööjuhis kolme uurimisküsimusega. Rakendus peab töötama nii arvutis kui mobiilis.`,example:'https://sites.google.com/hkhk.edu.ee/ti-tegevused/vabakukkumise-simulatsioon'},
+ {title:'Esitluse kavand ja eksport',about:'Struktureeritud slaidikava, mille saab pärast ülevaatamist Google Slidesi eksportida.',prompt:`Loo professionaalne ja visuaalselt köitev 6-slaidiline esitlus teemal „Prantsuse revolutsiooni põhjused ja tagajärjed”. Igal slaidil peab olema selge pealkiri, täpselt 3 peamist punkti ja soovitus sobiva visuaali jaoks. Käsitle järjest: vana korda ja kriisi algust, revolutsiooni põhjusi, võtmesündmusi, vahetuid tagajärgi Prantsusmaal, pikaajalist mõju Euroopale ning pärandit tänapäeval. Stiil olgu akadeemiline, struktureeritud ja kergesti jälgitav. Kontrolli nimede, aastaarvude ja sündmuste täpsust.`,example:'https://docs.google.com/presentation/d/18aBkjebxfh-Udpy3dS1ZvTpbcaBgT9P3-YJlLJqP1yQ/edit?usp=sharing'},
+ {title:'Interaktiivne õppematerjal',about:'Lühike järjestamisülesanne vahetu tagasiside ja lõpptulemusega.',prompt:`Loo 6. klassi õpilastele ühe HTML-failina interaktiivne tegevus veeringe õppimiseks. Õpilane peab paigutama protsessid õigesse järjekorda, saama iga vastuse järel sisulist tagasisidet ning lõpus nägema oma tulemust. Lisa mõistetele aurumine, kondenseerumine, sademed ja imbumine lihtsad seletused. Tegevus peaks võtma umbes 10 minutit ning töötama ka mobiilis.`,example:'https://sites.google.com/hkhk.edu.ee/ti-tegevused/veeringe-%C3%B5ppetegevus?authuser=0'},
+ {title:'Liikumispausi ketas',about:'Klassiruumi õnneratas 30-sekundiliste liikumis- ja lõõgastusharjutustega.',prompt:`Loo ühe iseseisva HTML-failina eestikeelne interaktiivne „Liikumispausi õnneratas”. Lisa 10–12 erinevat 30-sekundilist harjutust: ajuvõimlemine, venitus, lõõgastus ja sotsiaalsed mängud. Ratas peab nupuga keerlema ning valitud harjutus avanema suurelt esitlusvaates. Lisa 30-sekundiline taimer koos Start, Paus ja Taasta nuppudega, heli või konfettidega lõpus, kaardi- ja nimekirjavaade ning võimalus lisada oma harjutus. Kujundus olgu kaasaegne, projektorist hästi loetav ja mobiilisõbralik.`,example:'https://sites.google.com/hkhk.edu.ee/ti-tegevused/liikumispausi-ketas?authuser=0'},
+ {title:'Otsustusmäng',about:'Õpilane teeb ajaloolises või kirjanduslikus olukorras valikuid ja näeb otsuste tagajärgi.',prompt:`Loo interaktiivne valikutega stsenaarium 7. klassi ajaloo jaoks teemal „Elu keskaegses linnas”. Esita lugu 3–4-lauseliste lõikudena. Iga lõigu lõpus anna õpilasele 3 sisulist valikut. Sõltuvalt valikust liigu sobivasse järgmisse olukorda, selgita tagajärgi ja lisa iga sammu juurde üks kontrollitud ajaloofakt. Lõpus näita õpilase valikute kokkuvõtet ning kaht refleksiooniküsimust.`,example:'https://sites.google.com/hkhk.edu.ee/ti-tegevused/ajalugu-interaktiivne-stsenaarium'},
+ {title:'Interaktiivne tegelaskuju',about:'Rollimänguline lugemiskontroll või vestlus ajaloolise isiku, kirjandustegelase või võõrkeelse giidiga.',prompt:`Käitu nagu Oskar Lutsu „Kevade” tegelane Lible. Loo 5. klassi õpilasele interaktiivne lugemiskontroll oma karakterile kohases humoorikas, kuid õpilasele sobivas keeles. Esita korraga üks küsimus ja oota vastust. Kasuta ainult õpetaja lisatud küsimuste ja vastuste panka; ära mõtle uusi fakte ise välja. Arvesta vastus õigeks ka siis, kui sõnastus erineb, kuid sisu on õige. Anna iga vastuse järel lühike tagasiside ning lõpus kokkuvõte loetust arusaamise kohta. Lisa võimalus tulemus välja printida. Palu õpetajal enne loomist lisada küsimuste ja vastuste pank.`,example:'https://sites.google.com/hkhk.edu.ee/ti-tegevused/virtuaalne-lible?authuser=0'},
+ {title:'Väitlus- ja seletusmäng',about:'Feynmani tehnika: õpilane selgitab mõistet ning vestluspartner küsib lihtsaid täpsustavaid küsimusi.',prompt:`Käitu nagu uudishimulik 8-aastane laps. Mina olen 8. klassi õpilane ja selgitan sulle fotosünteesi protsessi. Esita korraga ainult üks lühike täpsustav „miks?” või „kuidas?” küsimus, kui kasutan liiga keerulisi sõnu või jätan olulise seose vahele. Ära anna mulle kohe valmis selgitust. Aita mul oma vastus samm-sammult võimalikult lihtsaks ja täpseks muuta. Lõpus võta kokku, mis oli minu selgituses selge ja mida võiksin veel täpsustada.`},
+ {title:'Grupigeneraator',about:'Rühmadesse jagamine, segamine ja tagasisidering koos kopeerimise ning printimisega.',prompt:`Loo ühe iseseisva HTML-failina eestikeelne interaktiivne rühmadesse jagaja. Kasutaja saab sisestada vähemalt 25 nime, ühe nime reale või komadega eraldatult; duplikaate ei arvestata ja kuvatakse nimede arv. Rühmi peab saama luua nii rühmade arvu kui inimeste arvu järgi, jaotus olgu võimalikult võrdne. Lisa „Sega uuesti”, positiivsed juhuslikud rühmanimed ning eraldi tagasisideringi režiim, kus iga inimene annab tagasisidet täpselt ühele teisele, keegi ei saa iseennast ja vähemalt kolme osaleja korral ei teki vastastikuseid paare. Lisa tulemuse kopeerimine, puhas prindivaade, tühjendamine ja arusaadavad veateated. Kujundus olgu kaasaegne, projektorist loetav ja mobiilisõbralik. Kasuta ainult HTML-i, CSS-i ja JavaScripti ilma väliste teekideta.`,example:'https://sites.google.com/hkhk.edu.ee/ti-tegevused/grupigeneraator'},
+ {title:'Klassi boss',about:'Mänguline teadmiste kontroll, kus klass ja teemakohane boss võistlevad elupunktidega.',prompt:`Loo klassi ekraanile mõeldud interaktiivne mäng „Klassi bossilahing” 7. klassi geograafia teemal „Kliimavöötmed”. Kliimakoletisel ja klassil on alguses 100 elupunkti. Kuva korraga üks küsimus kolme valikvastusega A, B ja C ning oota klassi vastust. Õige vastuse korral kaotab boss 20 HP ja ütleb ühe humoorika kaotusehüüatuse. Vale vastuse korral kaotab klass 20 HP ning kuvatakse kuni kahe lausega selgitus. Näita pärast iga küsimust mõlema poole visuaalset HP-riba. Mäng lõpeb, kui üks pool jõuab nulli. Kasuta selget, suurelt loetavat kujundust ja sobivaid emojisid.`,example:'https://sites.google.com/hkhk.edu.ee/ti-tegevused/kliimav%C3%B6%C3%B6tmed-klassi-bossilahing?authuser=0'}
+];
+const canvasTools=[['G','Gemini','https://gemini.google.com/'],['C','ChatGPT','https://chatgpt.com/'],['MC','Copilot','https://copilot.com/'],['CL','Claude','https://claude.ai/']];
+const canvasToolButtons=canvasTools.map(([mark,name,url])=>`<a class="canvas-tool canvas-tool-${mark.toLowerCase()}" target="_blank" rel="noopener" href="${url}"><span>${mark}</span>Ava ${name} ↗</a>`).join('');
+const canvasIdeaMarkup=canvasIdeas.map((idea,index)=>`<details class="canvas-idea"><summary><span>${String(index+1).padStart(2,'0')}</span><div><h3>${idea.title}</h3><p>${idea.about}</p></div><i aria-hidden="true">+</i></summary><div class="canvas-idea-body"><div class="canvas-prompt-label"><b>Kopeeritav viip</b><button type="button" class="canvas-copy" data-canvas-index="${index}">Kopeeri viip</button></div><pre>${idea.prompt}</pre>${idea.example?`<div class="canvas-example"><a class="btn" target="_blank" rel="noopener" href="${idea.example}">Vaata valmis näidet ↗</a></div>`:''}<div class="canvas-tool-label">Vali keskkond, kuhu viip kleepida</div><div class="canvas-tool-row">${canvasToolButtons}</div><div class="canvas-idea-actions"><span class="canvas-copy-status" aria-live="polite"></span></div></div></details>`).join('');
+document.querySelector('main').insertAdjacentHTML('beforeend',`<section class="page" data-page="canvas-ideapank"><div class="head"><div class="crumb">Moodulid / Canvase ideepank</div><h2>Canvase ideepank</h2><p>11 praktilist ideed Canvase projektide ja interaktiivsete õppematerjalide loomiseks. Ava pealkiri, kohanda viipa oma aine ja klassi järgi ning vali endale sobiv tehisarukeskkond.</p><div class="actions"><button class="btn" data-back>← Tagasi</button></div></div><div class="content"><div class="canvas-tip"><b>Soovitus.</b> Muuda enne saatmist vähemalt teemat, klassi, õpieesmärki ja tegevuse kestust. Kontrolli loodud materjali faktid ning testi kõik nupud enne õpilastega jagamist. Keskkondade võimalused võivad konto ja paketi järgi erineda.</div><div class="canvas-ideas">${canvasIdeaMarkup}</div></div></section>`);
+async function copyCanvasPrompt(button){const text=canvasIdeas[Number(button.dataset.canvasIndex)].prompt;let copied=false;try{if(navigator.clipboard&&window.isSecureContext){await navigator.clipboard.writeText(text);copied=true}}catch(error){}if(!copied){const helper=document.createElement('textarea');helper.value=text;helper.setAttribute('readonly','');helper.style.position='fixed';helper.style.opacity='0';document.body.appendChild(helper);helper.select();copied=document.execCommand('copy');helper.remove()}const status=button.closest('.canvas-idea-body').querySelector('.canvas-copy-status');const original=button.textContent;button.textContent=copied?'Kopeeritud ✓':'Proovi uuesti';status.textContent=copied?'Viip on lõikelaual.':'Kopeerimine ebaõnnestus.';setTimeout(()=>{button.textContent=original;status.textContent=''},2200)}
+document.querySelectorAll('.canvas-copy').forEach(button=>button.addEventListener('click',()=>copyCanvasPrompt(button)));
+document.head.insertAdjacentHTML('beforeend',`<style>.canvas-tip{margin-bottom:28px;padding:20px;border:3px solid var(--ink);background:var(--yellow);box-shadow:6px 6px 0 var(--ink)}.canvas-ideas{display:grid;gap:18px}.canvas-idea{border:3px solid var(--ink);background:#fff;box-shadow:7px 7px 0 var(--ink)}.canvas-idea:nth-child(4n+2){background:#fff8bf}.canvas-idea:nth-child(4n+3){background:#d9fff0}.canvas-idea:nth-child(4n){background:#dfe8ff}.canvas-idea summary{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:16px;padding:20px 24px;cursor:pointer;list-style:none}.canvas-idea summary::-webkit-details-marker{display:none}.canvas-idea summary>span{display:grid;place-items:center;width:48px;height:48px;border:3px solid var(--ink);background:var(--coral);font-weight:900}.canvas-idea summary h3{margin:0;font-size:clamp(20px,3vw,28px)}.canvas-idea summary p{margin:5px 0 0;color:var(--muted)}.canvas-idea summary i{display:grid;place-items:center;width:42px;height:42px;border:3px solid var(--ink);background:var(--yellow);font:900 28px/1 Manrope,sans-serif;font-style:normal;transition:transform .2s}.canvas-idea[open] summary{border-bottom:3px solid var(--ink)}.canvas-idea[open] summary i{transform:rotate(45deg);background:var(--coral)}.canvas-idea summary:hover i,.canvas-idea summary:focus-visible i{box-shadow:3px 3px 0 var(--ink)}.canvas-idea-body{padding:24px}.canvas-prompt-label{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:8px;text-transform:uppercase;letter-spacing:.08em;font-size:13px}.canvas-copy{padding:7px 11px;border:2px solid var(--ink);background:var(--paper);box-shadow:2px 2px 0 var(--ink);font:800 13px Manrope,sans-serif;cursor:pointer}.canvas-copy:hover,.canvas-copy:focus-visible{background:var(--lime);transform:translate(-1px,-1px)}.canvas-idea pre{margin:0;padding:18px;border:2px solid var(--ink);background:rgba(255,255,255,.84);white-space:pre-wrap;overflow-wrap:anywhere;font:500 15px/1.65 Manrope,sans-serif}.canvas-idea-actions{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-top:18px}.canvas-copy-status{font-weight:800}@media(max-width:700px){.canvas-idea{box-shadow:5px 5px 0 var(--ink)}.canvas-idea summary{grid-template-columns:auto 1fr;padding:14px;gap:10px}.canvas-idea summary>span{width:42px;height:42px}.canvas-idea summary i{grid-column:1/-1;width:100%;height:34px}.canvas-idea-body{padding:16px}.canvas-prompt-label{align-items:flex-start}.canvas-idea-actions .btn{width:100%}}</style>`);
+document.head.insertAdjacentHTML('beforeend',`<style>.canvas-example{margin-top:18px}.canvas-tool-label{margin:22px 0 9px;font-size:13px;font-weight:900;letter-spacing:.08em;text-transform:uppercase}.canvas-tool-row{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}.canvas-tool{display:flex;align-items:center;gap:9px;padding:10px 12px;border:2px solid var(--ink);background:#fff;color:var(--ink);box-shadow:3px 3px 0 var(--ink);font-size:13px;font-weight:900;text-decoration:none;transition:transform .15s,box-shadow .15s}.canvas-tool:hover,.canvas-tool:focus-visible{transform:translate(-2px,-2px);box-shadow:5px 5px 0 var(--ink)}.canvas-tool span{display:grid;place-items:center;flex:0 0 30px;height:30px;border:2px solid var(--ink);background:var(--lime);font-size:11px}.canvas-tool-c span{background:#d9fff0}.canvas-tool-mc span{background:#dfe8ff}.canvas-tool-cl span{background:#ffd1c5}@media(max-width:850px){.canvas-tool-row{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:480px){.canvas-tool-row{grid-template-columns:1fr}.canvas-tool{font-size:14px}}</style>`);
 const aiToolCategories=[
- {icon:'Aa',title:'Tekstigeneraatorid (LLM)',summary:'Teksti loomine, analüüs, strateegiad, pikkade dokumentide töötlemine ning turundus- ja sotsiaalmeediasisu koostamine.',tools:[['ChatGPT','https://chatgpt.com/'],['Gemini','https://gemini.google.com/'],['Claude','https://claude.ai/'],['Jasper','https://www.jasper.ai/'],['Copy.ai','https://www.copy.ai/']]},
- {icon:'PI',title:'Pildigeneraatorid ja disaini AI',summary:'Illustratsioonide, reklaamvisuaalide, kujunduste ja turundusmaterjalide loomine tekstilise kirjelduse põhjal.',tools:[['Midjourney','https://www.midjourney.com/'],['DALL·E','https://openai.com/index/dall-e-3/'],['Canva AI','https://www.canva.com/ai-image-generator/']]},
- {icon:'VI',title:'Videogeneraatorid',summary:'AI-videote loomine ja monteerimine, virtuaalse esitlejaga videod ning tekstist lühivideote genereerimine.',tools:[['Runway','https://runwayml.com/'],['Synthesia','https://www.synthesia.io/'],['Pika','https://pika.art/']]},
- {icon:'HE',title:'Heli ja audio AI',summary:'Loomuliku kõne genereerimine, transkriptsioon ning heli ja video tekstipõhine monteerimine.',tools:[['ElevenLabs','https://elevenlabs.io/'],['Descript','https://www.descript.com/']]},
- {icon:'PR',title:'Produktiivsus ja kontoritöö',summary:'Kontoritöö automatiseerimine, märkmete kokkuvõtted, sisu loomine ning esitlusmaterjalide kiire koostamine.',tools:[['Microsoft Copilot','https://www.microsoft.com/microsoft-copilot'],['Notion AI','https://www.notion.com/product/ai'],['Tome','https://tome.app/']]},
- {icon:'OT',title:'Otsing ja analüüs',summary:'Allikapõhised vastused ning dokumentide ja andmete tõlgendamine, et uurimistöö oleks kiirem ja kontrollitavam.',tools:[['Perplexity','https://www.perplexity.ai/'],['Gemini','https://gemini.google.com/']]},
- {icon:'AU',title:'Automatiseerimine',summary:'Rakenduste ühendamine töövoogudeks ja korduvate tegevuste automatiseerimine visuaalsete tööriistade abil.',tools:[['Zapier','https://zapier.com/'],['Make','https://www.make.com/']]},
- {icon:'KO',title:'Arendus ja kood',summary:'Programmeerimiskoodi kirjutamise, täiendamise ja selgitamise toetamine tehisaru abil.',tools:[['GitHub Copilot','https://github.com/features/copilot']]}
+ {icon:'PI',title:'Pildid',summary:'Piltide genereerimine ja redigeerimine, disain, fotorealistlikud visuaalid, plakatid ning tekstiga kujundused.',tools:[['Midjourney','https://www.midjourney.com/'],['ChatGPT pildid','https://chatgpt.com/'],['Adobe Firefly','https://firefly.adobe.com/'],['Canva AI','https://www.canva.com/ai-image-generator/'],['Stable Diffusion','https://stability.ai/stable-image'],['Leonardo AI','https://leonardo.ai/'],['Ideogram','https://ideogram.ai/'],['Nano Banana','https://aistudio.google.com/']]},
+ {icon:'VI',title:'Videod',summary:'Videote genereerimine ja monteerimine, virtuaalsed esitlejad, subtiitrid, lühiklipid ning video kvaliteedi parandamine.',tools:[['Runway','https://runwayml.com/'],['Veo','https://deepmind.google/models/veo/'],['CapCut AI','https://www.capcut.com/tools/ai-video-generator'],['HeyGen','https://www.heygen.com/'],['Synthesia','https://www.synthesia.io/'],['Kling AI','https://klingai.com/'],['Descript','https://www.descript.com/'],['Luma Dream Machine','https://lumalabs.ai/dream-machine'],['InVideo AI','https://invideo.io/ai/'],['Fliki AI','https://fliki.ai/'],['Studio D-ID','https://www.d-id.com/'],['VanceAI','https://vanceai.com/'],['Let’s Enhance','https://letsenhance.io/'],['Munch','https://www.getmunch.com/'],['Submagic','https://www.submagic.co/']]},
+ {icon:'TE',title:'Tekstid',summary:'Teksti loomine, toimetamine ja tõlkimine, ideede arendamine, dokumentide analüüs ning kontoritöö toetamine.',tools:[['ChatGPT','https://chatgpt.com/'],['Gemini','https://gemini.google.com/'],['Claude','https://claude.ai/'],['Microsoft 365 Copilot','https://www.microsoft.com/microsoft-365-copilot'],['Grammarly','https://www.grammarly.com/'],['DeepL','https://www.deepl.com/']]},
+ {icon:'HE',title:'Heli / hääl',summary:'Kõnesüntees, hääle loomine, eestikeelne ettelugemine, ligipääsetavus ning muusika genereerimine.',tools:[['ElevenLabs','https://elevenlabs.io/'],['Jutusta.ee','https://jutusta.ee/'],['Neurokõne','https://neurokone.ee/'],['Suno','https://suno.com/']]},
+ {icon:'KO',title:'Kood',summary:'Programmeerimiskoodi kirjutamine, selgitamine, täiendamine ja testimine ning terviklike digilahenduste loomine.',tools:[['GitHub Copilot','https://github.com/features/copilot'],['Claude Code','https://claude.com/product/claude-code'],['Codex','https://openai.com/codex/'],['Cursor','https://www.cursor.com/'],['ChatGPT koodile','https://chatgpt.com/']]},
+ {icon:'ES',title:'Esitlused',summary:'Slaidide, visuaalsete lugude, diagrammide ja esitlusmaterjalide kiire kavandamine ning kujundamine.',tools:[['Gamma','https://gamma.app/'],['Napkin AI','https://www.napkin.ai/'],['Beautiful.ai','https://www.beautiful.ai/'],['SlidesAI','https://www.slidesai.io/']]},
+ {icon:'AN',title:'Andmeanalüüs',summary:'Tabelite ja andmestike uurimine, visualiseerimine, küsimustele vastamine ning prognooside koostamine.',tools:[['Julius AI','https://julius.ai/'],['ChatGPT andmeanalüüs','https://chatgpt.com/'],['Akkio','https://www.akkio.com/']]},
+ {icon:'AU',title:'Automatiseerimine',summary:'Rakenduste ühendamine töövoogudeks, korduvate tegevuste automatiseerimine ning agentsete protsesside loomine.',tools:[['Zapier AI','https://zapier.com/ai'],['Make','https://www.make.com/'],['n8n','https://n8n.io/'],['Bardeen','https://www.bardeen.ai/']]},
+ {icon:'TU',title:'Turundus',summary:'Turundustekstid, SEO-sisu, reklaamvisuaalid, videoklipid ning sisu taaskasutamine eri kanalites.',tools:[['Jasper','https://www.jasper.ai/'],['Copy.ai','https://www.copy.ai/'],['Journalist AI','https://journalistai.com/'],['AdCreative.ai','https://www.adcreative.ai/'],['Surfer SEO','https://surferseo.com/'],['Opus Clip','https://www.opus.pro/']]},
+ {icon:'UR',title:'Uurimine',summary:'Allikapõhine otsing, süvauuring, teaduskirjanduse leidmine, PDF-ide analüüs ja oma materjalide põhjal vastamine.',tools:[['Perplexity AI','https://www.perplexity.ai/'],['ChatGPT Deep Research','https://chatgpt.com/'],['ChatPDF','https://www.chatpdf.com/'],['Consensus','https://consensus.app/'],['Elicit','https://elicit.com/'],['NotebookLM','https://notebooklm.google.com/']]},
+ {icon:'MU',title:'Muu kasulik',summary:'Märkmed, veebirakenduste loomine, visuaalne teadmiste korrastamine ning koosolekute salvestamine ja kokkuvõtted.',tools:[['Notion AI','https://www.notion.com/product/ai'],['Lovable','https://lovable.dev/'],['Mymind','https://mymind.com/'],['Fireflies.ai','https://fireflies.ai/']]}
 ];
 const aiCategoryCards=aiToolCategories.map((category,index)=>`<article class="ai-category-card"><span class="ai-category-icon">${category.icon}</span><span class="type">${String(index+1).padStart(2,'0')} · Kategooria</span><h3>${category.title}</h3><p>${category.summary}</p><div class="tool-tags">${category.tools.map(([tool,url])=>`<a target="_blank" rel="noopener" href="${url}">${tool} <span aria-hidden="true">↗</span></a>`).join('')}</div></article>`).join('');
-document.querySelector('main').insertAdjacentHTML('beforeend',`<section class="page" data-page="aitools"><div class="head"><div class="crumb">Avaleht / AI tööriistad kategooriate kaupa</div><h2>AI tööriistad kategooriate kaupa</h2><p>Kiirülevaade aitab valida töövahendi selle järgi, millist ülesannet soovid lahendada. Tööriista valides arvesta alati eesmärgi, andmekaitse, hinna ja tulemuse kontrollimise vajadusega.</p><div class="actions"><button class="btn" data-back>← Tagasi</button><a class="btn primary" target="_blank" rel="noopener" href="https://meistriklass.aiakadeemia.ee/ai-tooriistad">Vaata algallikat ↗</a></div></div><div class="content"><div class="ai-category-grid">${aiCategoryCards}</div><div class="ai-source-note"><strong>Kokkuvõte:</strong> tööriistad on rühmitatud peamise kasutusviisi järgi. Mõni keskkond, näiteks Gemini, sobib mitmesse kategooriasse. Loetelu ei ole pingerida ning keskkondade võimalused ja hinnad võivad muutuda. <a target="_blank" rel="noopener" href="https://meistriklass.aiakadeemia.ee/ai-tooriistad">Allikas: AI Akadeemia ↗</a></div></div></section>`);
+document.querySelector('main').insertAdjacentHTML('beforeend',`<section class="page" data-page="aitools"><div class="head"><div class="crumb">Avaleht / AI tööriistad kategooriate kaupa</div><h2>AI tööriistad kategooriate kaupa</h2><p>65 tööriista 11 kategoorias. Kiirülevaade aitab valida töövahendi ülesande järgi. Arvesta eesmärgi, keele, andmekaitse, kasutusõiguste, kogukulu ja tulemuse kontrollimise vajadusega.</p><div class="actions"><button class="btn" data-back>← Tagasi</button><a class="btn primary" target="_blank" rel="noopener" href="https://meistriklass.aiakadeemia.ee/ai-tooriistad">Vaata algallikat ↗</a></div></div><div class="content"><div class="ai-category-grid">${aiCategoryCards}</div><div class="ai-source-note"><strong>Uuendatud 24.10.2026:</strong> tööriistad on rühmitatud peamise kasutusviisi järgi. Mõni keskkond sobib mitmesse kategooriasse. Loetelu ei ole pingerida ning funktsioonid, hinnad ja tasuta limiidid võivad muutuda — kontrolli neid teenuse ametlikult lehelt. <a target="_blank" rel="noopener" href="https://meistriklass.aiakadeemia.ee/ai-tooriistad">Allikas: AI Akadeemia ↗</a></div></div></section>`);
 document.head.insertAdjacentHTML('beforeend',`<style>.top .nav{gap:5px}.top .nav a{padding:7px 8px;font-size:12px}.top .nav a[href="#aitools"]{max-width:140px;text-align:center;line-height:1.08}.top .nav a:hover,.top .nav a:focus-visible{background:var(--paper);border:2px solid var(--ink);box-shadow:3px 3px 0 var(--ink);transform:translate(-2px,-2px)}.ai-category-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}.ai-category-card{position:relative;padding:26px;border:3px solid var(--ink);background:white;box-shadow:7px 7px 0 var(--ink)}.ai-category-card:nth-child(4n+2){background:#fff8bf}.ai-category-card:nth-child(4n+3){background:#d9fff0}.ai-category-card:nth-child(4n){background:#dfe8ff}.ai-category-icon{display:grid;place-items:center;width:48px;height:48px;margin-bottom:18px;border:3px solid var(--ink);background:var(--coral);box-shadow:3px 3px 0 var(--ink);font:800 15px Manrope,sans-serif}.ai-category-card h3{margin:10px 0}.ai-category-card p{color:var(--muted);margin:0 0 18px}.tool-tags{display:flex;flex-wrap:wrap;gap:8px}.tool-tags a{display:inline-flex;align-items:center;gap:5px;padding:7px 10px;border:2px solid var(--ink);background:var(--paper);color:var(--ink);font-size:13px;font-weight:800;text-decoration:none;transition:transform .15s,box-shadow .15s}.tool-tags a:hover,.tool-tags a:focus-visible{background:var(--lime);box-shadow:3px 3px 0 var(--ink);transform:translate(-2px,-2px)}.tool-tags a span{font-size:12px}.ai-source-note{margin-top:28px;padding:20px;border:3px solid var(--ink);background:var(--lime);box-shadow:6px 6px 0 var(--ink)}.ai-source-note a{font-weight:800}@media(max-width:1080px) and (min-width:901px){.top .nav{gap:2px}.top .nav a{padding:6px 5px;font-size:11px}.top .nav a[href="#aitools"]{max-width:118px}}@media(max-width:900px){.top .nav a{font-size:14px;padding:12px 14px}}@media(max-width:700px){.ai-category-grid{grid-template-columns:1fr}.ai-category-card{padding:20px}}</style>`);
-document.querySelector('h1').textContent='TEHISINTELLEKTI TÖÖTUBA';document.querySelectorAll('.head .actions a[href="#home"]').forEach(a=>a.remove());document.querySelector('.overview a[href="#modules"] h3').textContent='I–IV mooduli slaidid';document.querySelector('footer span:first-child').textContent='Tehisintellekti töötuba';const module4Material=document.querySelector('[data-page="module4"] .feature a');module4Material.href='https://docs.google.com/presentation/d/10yaYxEGwhbwWMaWMexXfoWnGQoGDDlTv/edit?usp=sharing&ouid=115879436694042388082&rtpof=true&sd=true';module4Material.textContent='Ava esitlus ↗';
+document.querySelector('h1').textContent='TEHISINTELLEKTI TÖÖTUBA';document.querySelectorAll('.head .actions a[href="#home"]').forEach(a=>a.remove());document.querySelector('.overview a[href="#modules"] h3').textContent='I–IV moodul';document.querySelector('footer span:first-child').textContent='Tehisintellekti töötuba';const module4Material=document.querySelector('[data-page="module4"] .feature a');module4Material.href='https://docs.google.com/presentation/d/10yaYxEGwhbwWMaWMexXfoWnGQoGDDlTv/edit?usp=sharing&ouid=115879436694042388082&rtpof=true&sd=true';module4Material.textContent='Ava esitlus ↗';
 document.querySelector('#nav a[href="#workshops2025"]').insertAdjacentHTML('beforebegin','<a href="#extras">Lisamaterjalid</a>');
 document.querySelector('main').insertAdjacentHTML('beforeend',`<section class="page" data-page="extras"><div class="head"><div class="crumb">Avaleht / Lisamaterjalid</div><h2>Ideed, näited ja enesekontroll</h2><p>Praktiline jätkukogu õpetajale: tunninäited, promptide parandamine, töövahendi valik, töövood ning usaldusväärsed artiklid.</p><div class="actions"><button class="btn" data-back>← Tagasi</button></div></div><div class="content extras-content">
 <h3 class="section-title">1. Valmis tunninäited</h3><div class="grid">
